@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Product List</h1>
+        <a class="btn btn-primary mb-3" href="/add">Add new product</a>
+        <ul class="list-group">
+            <% products.forEach((product)=> { %>
+                <li class="list-group-item">
+                    <%= product.name %>
+                    <div class="float-right">
+                        <a class="btn btn-info btn-sm mr-2" href="/details/<%= product.id %>">Details</a>
+                        <a class="btn btn-warning btn-sm mr-2" href="/edit/<%= product.id %>">Edit</a>
+                        <a class="btn btn-danger btn-sm" href="/delete/<%= product.id %>">Delete</a>
+                    </div>
+                </li>
+                <% }) %>
+        </ul>
+        <a class="btn btn-secondary mt-3" href="/logout">Log out</a>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (if needed) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
