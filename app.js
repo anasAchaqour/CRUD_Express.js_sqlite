@@ -3,7 +3,7 @@ const sqlite3 = require('sqlite3');
 const session = require('express-session');
 const ejs = require('ejs');
 const app = express();
-const port = 3000;
+const port = 3030;
 // Middleware to parse request body
 app.use(express.urlencoded({ extended: true }));
 // Set EJS as the view engine
