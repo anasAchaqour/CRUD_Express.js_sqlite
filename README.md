@@ -6,25 +6,16 @@ This project is a simple Product Management System implemented using SQLite as t
 
 Key Features:
 
-
 View a list of products.
-
 Add new products with name and description.
-
 Edit existing products.
-
 View detailed information about each product.
-
 Responsive and user-friendly design with Bootstrap.
 
 Tech Stack:
 
-
 Express.js
-
 SQLite
-
 EJS (Embedded JavaScript)
-
 Bootstrap
 
